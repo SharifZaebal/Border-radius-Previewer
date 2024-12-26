@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="section-main-header">Border-radius Previewer / Предварительный просмотр радиуса границы</h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="section-entering-all-values">
+            <div class="container">
+                <h2 class="header-section">Ввод значений для всех сторон</h2>
+                <div class="input-field-all-values-container">
+                    <input type="text" id="all-values" class="input-all-value" placeholder="Введите значение для всех границ">
+                    <h3 class="header-value-type-container">Выберите одно из значений, или вставьте своё</h3>
+                    <div class="value-type-all-angles-btn-container">
+                        <button class="value-type-all-angles" value="px">px</button>
+                        <button class="value-type-all-angles" value="%">%</button>
+                        <button class="value-type-all-angles" value="em">em</button>
+                    </div>
+                    <button class="btn-func-all-values">Показать</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-entering-values-individually">
+            <div class="container">
+                <h2 class="header-section">Ввод значений для каждой стороны</h2>
+                <div class="input-field-individual-values">
+                    <div class="upper-angles">
+                        <div class="top-left flex-column row-gap10">
+                            <input type="text" min="0" class="input-separate-value">
+                            <select name="type-value" class="select-type-list">
+                                <option value="px" class="select-type-item">px</option>
+                                <option value="%" class="select-type-item">%</option>
+                                <option value="em" class="select-type-item">em</option>
+                            </select>
+                        </div>
+                       <div class="top-right flex-column row-gap10">
+                           <input type="text" min="0" class="input-separate-value">
+                           <select name="type-value" class="select-type-list">
+                               <option value="px" class="select-type-item">px</option>
+                               <option value="%" class="select-type-item">%</option>
+                               <option value="em" class="select-type-item">em</option>
+                           </select>
+                       </div>
+                    </div>
+
+                    <div class="square-radius">
+                        <div class="text-in-square">border-radius: none;</div>
+                    </div>
+
+                    <div class="bottom-angles">
+                        <div class="bottom-right flex-column row-gap10">
+                            <input type="text" min="0" class="input-separate-value">
+                            <select name="type-value" class="select-type-list">
+                                <option value="px" class="select-type-item">px</option>
+                                <option value="%" class="select-type-item">%</option>
+                                <option value="em" class="select-type-item">em</option>
+                            </select>
+                        </div>
+                        <div class="bottom-left flex-column row-gap10">
+                            <input type="text" min="0" class="input-separate-value">
+                            <select name="type-value" class="select-type-list">
+                                <option value="px" class="select-type-item">px</option>
+                                <option value="%" class="select-type-item">%</option>
+                                <option value="em" class="select-type-item">em</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="/script/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Fira Sans', sans-serif;
+
+    background: rgb(255,123,41);
+    background: linear-gradient(162deg, rgba(255,123,41,1) 19%, rgba(106,124,255,1) 76%);
+    color: #fff;
+
+}
+
+.header-section {
+    line-height: 1;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.row-gap10 {
+    row-gap: 10px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Header section start */
+
+.header  {
+    padding: 50px 0;
+
+    text-align: center;
+}
+
+.section-main-header {
+    line-height: 1;
+    font-size: 36px;
+}
+
+/* Header section end */
+
+/* Section  entering all values start*/
+
+.section-entering-all-values {
+    text-align: center;
+
+    padding: 50px 0;
+}
+
+
+
+.input-field-all-values-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    row-gap: 20px;
+}
+
+.input-all-value {
+    padding: 25px 20px;
+
+    outline: none;
+
+    background: transparent;
+    color: white;
+
+    border: 1px solid white;
+
+
+    font-size: 20px;
+    font-weight: 600;
+
+    transition: 1s;
+}
+.input-all-value::placeholder {
+    color: white;
+}
+.input-all-value:hover {
+    background-color: white;
+    color: black;
+    transition: 1s;
+    border-radius: 20px;
+}
+
+.value-type-all-angles-btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    column-gap: 10px;
+}
+
+.value-type-all-angles {
+    flex: 1 1 0.33%;
+    padding: 25px 20px;
+
+    outline: none;
+
+    color: white;
+
+    background: transparent;
+
+    border: 1px solid white;
+
+    cursor: pointer;
+
+    transition: 1s;
+}
+
+.value-type-all-angles:hover {
+    background-color: white;
+    color: black;
+
+    border-radius: 20px;
+
+    transition: 0.5s;
+}
+
+.header-value-type-container {
+
+}
+
+.btn-func-all-values {
+    padding: 25px 20px;
+
+    outline: none;
+
+    background: transparent;
+    color: white;
+
+    border: 1px solid white;
+    border-radius: 0;
+
+    font-size: 20px;
+
+    cursor: pointer;
+
+    transition: 1s;
+}
+.btn-func-all-values:hover {
+    border-radius: 20px;
+    transition: 0.5s;
+
+    background-color: white;
+    color: black;
+}
+
+/* Section  entering all values end*/
+.section-entering-values-individually {
+    padding: 50px 0;
+}
+
+.input-field-individual-values {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 20px;
+}
+
+.input-separate-value {
+    padding: 15px 10px;
+
+    font-size: 20px;
+    font-weight: 600;
+    outline: none;
+
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+}
+.input-separate-value:hover {
+    background-color: white;
+    color: black;
+    transition: 1s;
+    border-radius: 20px;
+}
+
+.select-type-list {
+    padding: 15px 10px;
+
+    font-size: 20px;
+    font-weight: 600;
+    outline: none;
+
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+
+    transition: 1s;
+}
+.select-type-list:hover {
+    background: #fff;
+    color: black;
+
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.select-type-item {
+    background: transparent;
+    color: black;
+}
+
+.upper-angles {
+    display: flex;
+    justify-content: space-between;
+}
+
+.square-radius {
+    margin: auto;
+}
+
+.bottom-angles {
+    display: flex;
+    justify-content: space-between;
+}
+
+.square-radius {
+    width: 800px;
+    height: 500px;
+
+    border: 10px solid #fff;
+    background-color: transparent;
+}
+
+.square-radius {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text-in-square {
+    color: white;
+    line-height: 1;
+    font-weight: 600;
+
+    font-size: 45px;
+}
