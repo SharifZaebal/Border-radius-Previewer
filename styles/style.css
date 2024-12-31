@@ -128,10 +128,6 @@ body {
     transition: 0.5s;
 }
 
-.header-value-type-container {
-
-}
-
 .btn-func-all-values {
     padding: 25px 20px;
 
@@ -228,22 +224,25 @@ body {
 }
 
 .square-radius {
+    margin: 0 auto;
     width: 800px;
     height: 500px;
 
     border: 10px solid #fff;
     background-color: transparent;
-}
 
-.square-radius {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.text-in-square {
     color: white;
     line-height: 1;
     font-weight: 600;
 
     font-size: 45px;
+
+    cursor: pointer;
+
+    transition: 0.5s;
+}
+
+.square-radius:hover {
+    background-color: rgba(172, 172, 172, 0.7);
+    transition: 1s;
 }

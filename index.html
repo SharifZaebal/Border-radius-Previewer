@@ -21,11 +21,11 @@
                     <input type="text" id="all-values" class="input-all-value" placeholder="Введите значение для всех границ">
                     <h3 class="header-value-type-container">Выберите одно из значений, или вставьте своё</h3>
                     <div class="value-type-all-angles-btn-container">
-                        <button class="value-type-all-angles" value="px">px</button>
-                        <button class="value-type-all-angles" value="%">%</button>
-                        <button class="value-type-all-angles" value="em">em</button>
+                        <button class="value-type-all-angles" value="px" id="px" onclick="pixelsForAllAngles()">px</button>
+                        <button class="value-type-all-angles" value="%" id="%" onclick="percentagesForAllAngles()">%</button>
+                        <button class="value-type-all-angles" value="em" id="em" onclick="emForAllAngles()">em</button>
                     </div>
-                    <button class="btn-func-all-values">Показать</button>
+                    <button class="btn-func-all-values" onclick="allAngles()">Показать</button>
                 </div>
             </div>
         </section>
@@ -36,7 +36,7 @@
                 <div class="input-field-individual-values">
                     <div class="upper-angles">
                         <div class="top-left flex-column row-gap10">
-                            <input type="text" min="0" class="input-separate-value">
+                            <input type="text" min="0" class="input-separate-value" id="input-separate-value">
                             <select name="type-value" class="select-type-list">
                                 <option value="px" class="select-type-item">px</option>
                                 <option value="%" class="select-type-item">%</option>
@@ -44,7 +44,7 @@
                             </select>
                         </div>
                        <div class="top-right flex-column row-gap10">
-                           <input type="text" min="0" class="input-separate-value">
+                           <input type="text" min="0" class="input-separate-value" id="input-separate-value">
                            <select name="type-value" class="select-type-list">
                                <option value="px" class="select-type-item">px</option>
                                <option value="%" class="select-type-item">%</option>
@@ -53,13 +53,15 @@
                        </div>
                     </div>
 
-                    <div class="square-radius">
-                        <div class="text-in-square">border-radius: none;</div>
-                    </div>
+                    <!-- <div class="square-radius">
+                        <div class="text-in-square">border-radius: <span id="value-border-radius">none</span>;</div>
+                    </div> -->
+
+                    <button class="square-radius">border-radius: <span id="value-border-radius">none</span>;</button>
 
                     <div class="bottom-angles">
                         <div class="bottom-right flex-column row-gap10">
-                            <input type="text" min="0" class="input-separate-value">
+                            <input type="text" min="0" class="input-separate-value" id="input-separate-value">
                             <select name="type-value" class="select-type-list">
                                 <option value="px" class="select-type-item">px</option>
                                 <option value="%" class="select-type-item">%</option>
@@ -67,7 +69,7 @@
                             </select>
                         </div>
                         <div class="bottom-left flex-column row-gap10">
-                            <input type="text" min="0" class="input-separate-value">
+                            <input type="text" min="0" class="input-separate-value" id="input-separate-value">
                             <select name="type-value" class="select-type-list">
                                 <option value="px" class="select-type-item">px</option>
                                 <option value="%" class="select-type-item">%</option>
