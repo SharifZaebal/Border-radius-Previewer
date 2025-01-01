@@ -1,5 +1,6 @@
 const elementSquare = document.querySelector('.square-radius')
 const inlineStyles = elementSquare.style 
+inlineStyles.transition = '1s'
 
 function allAngles () {
     const inputValues = document.getElementById('all-values').value;
@@ -23,4 +24,14 @@ function emForAllAngles () {
     const type = document.getElementById('em').value
     inlineStyles.borderRadius = `${inputValues}${type}`
     document.getElementById('value-border-radius').innerText = `${inputValues}${type}`
+}
+function copyText () {
+    var input = document.createElement('input');
+    input.value = document.querySelector('square-radius').innerHTML;
+    input.id = 'inputID';
+    document.body.appendChild(input);
+    input.select();
+    document.execCommand('copy');
+    document.body.removeChild(input);
+
 }
