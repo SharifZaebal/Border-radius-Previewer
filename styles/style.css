@@ -35,6 +35,12 @@ body {
     margin: 0 auto;
 }
 
+.flex {
+    flex: 1 1 33.33%;
+}
+.upper-angles {
+    gap: 10px;
+}
 /* Header section start */
 
 .header  {
@@ -214,13 +220,11 @@ body {
     justify-content: space-between;
 }
 
-.square-radius {
-    margin: auto;
-}
-
 .bottom-angles {
     display: flex;
     justify-content: space-between;
+
+    gap: 10px;
 }
 
 .square-radius {
@@ -240,9 +244,36 @@ body {
     cursor: pointer;
 
     transition: 0.5s;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .square-radius:hover {
     background-color: rgba(172, 172, 172, 0.7);
     transition: 1s;
+}
+
+.btn-show-individual-angles {
+    outline: none;
+
+    background: transparent;
+    color: white;
+
+    border: 1px solid white;
+    border-radius: 0;
+
+    font-size: 20px;
+
+    cursor: pointer;
+
+    transition: 1s;
+}
+.btn-show-individual-angles:hover {
+    border-radius: 20px;
+    transition: 0.5s;
+
+    background-color: white;
+    color: black;
 }
